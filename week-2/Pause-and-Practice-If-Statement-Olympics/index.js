@@ -17,8 +17,9 @@ var person = {
     age: 12
 }
 
-if(person >= 18) {
+if(person.age >= 18) {
     console.log("Bobby is allowed to go into movies")
 } else {
     console.log("Bobby is not allowed to go into movies")
 }
+
