@@ -51,16 +51,30 @@ oldEnoughName();
 
 console.log("--------------------------------------");
 //Check to see if the movie goer is a male or female for an even more personalized message
-function oldEnoughName(){
+function oldEnoughNameAndGender(){
     for (var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){
+        if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender = "male"){
+            var gender = "He";
+        }
+        else if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender = "female"){
+            var gender = "She";
+        };
         if (peopleWhoWantToSeeMadMaxFuryRoad[i].age >= 18){
-            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is of age to see Mad Max.")
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is of age to see Mad Max." + gender + "'s allowed into the movies.")
         }
         else if(peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18){
-            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not of age to see Mad Max")
-        }
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not of age to see Mad Max." + gender + "'s not allowed into the movies.")
+        };
     }
 }
-oldEnoughName();
+oldEnoughNameAndGender();
 
 console.log("--------------------------------------");
+//Create a for loop that iterates through 101 numbers (from 0 - 100). If the current iteration is an Odd number, print "Odd" to the console, otherwise print "Even".
+for (var i = 0; i < 101; i++){
+    if (i % 2 == 0) {
+        console.log("The number is even.")
+    }else{
+        console.log("The number is odd.")
+    }
+}
